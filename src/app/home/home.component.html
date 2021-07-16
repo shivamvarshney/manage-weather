@@ -1,0 +1,20 @@
+<table>
+  <thead>
+      <tr>
+          <th>City Name</th>
+          <th>Sunrise Time</th>
+          <th>Sunset Time</th>
+          <th>Temprature</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let cityInfo of citiesData">
+          <td>
+              <a [routerLink]="'/weatherReport/'+cityInfo.id">{{ cityInfo.name }}</a>
+          </td>
+          <td>{{ cityInfo.sunSetTime }}</td>
+          <td>{{ cityInfo.sunRiseTime }}</td>
+          <td>{{ cityInfo.temprature }}</td>
+      </tr>
+  </tbody>
+</table>

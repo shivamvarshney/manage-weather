@@ -1,0 +1,17 @@
+<div *ngIf="weatherData">
+  <h5>Main</h5>
+  {{ weatherData.weather[0].main }}
+  <h5>Description</h5>
+  {{ weatherData.weather[0].description }}
+
+  <h5>Lon</h5>
+  {{ weatherData.coord.lon }}
+  <h5>Lat</h5>
+  {{ weatherData.coord.lat }}
+
+  <h5>Temp</h5>
+  {{ weatherData.main.temp }}
+  <h5>Humidity</h5>
+  {{ weatherData.main.humidity }}
+
+</div>
